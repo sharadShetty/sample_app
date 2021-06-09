@@ -14,7 +14,7 @@ const createControllers = () => {
         await updateSecondOutput(inputOneValues, inputTwoValues);
         res.send('ok');
       } catch (err) {
-        res.status(400).send({ err });
+        res.status(500).send({ err });
       }
     },
 
@@ -27,7 +27,7 @@ const createControllers = () => {
         await updateSecondOutput(inputOneValues, inputTwoValues);
         res.send('ok');
       } catch (err) {
-        res.status(400).send({ err });
+        res.status(500).send({ err });
       }
     },
 
@@ -40,7 +40,7 @@ const createControllers = () => {
         await updateSecondOutput(inputOneValues, inputTwoValues);
         res.send('ok');
       } catch (err) {
-        res.status(400).send({ err });
+        res.status(500).send({ err });
       }
     },
   };
